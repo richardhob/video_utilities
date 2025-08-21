@@ -30,7 +30,7 @@ if __name__ == "__main__":
     parser.add_argument("path")
     parser.add_argument("name")
     parser.add_argument("season", type=int)
-    parser.add_argument("-s", type=int, default=1)
+    parser.add_argument("-s", type=int, default=1, help="Number to start at (default is 1)")
     parser.add_argument("-x", action="store_true")
     parser.add_argument("--extension", default='.m4v')
 
