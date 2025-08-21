@@ -19,7 +19,10 @@ def get_rename(name, extension, indicies):
 
 def rename(values):
     for old, new in values:
-        os.rename(old, new)
+        try:
+            os.rename(old, new)
+        except:
+            pass
 
 def fix(name, extension, indicies):
     values = []
